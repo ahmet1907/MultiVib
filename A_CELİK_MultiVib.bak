@@ -1,0 +1,241 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BC368
+LIBS:A_CELİK_MultiVib-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 58C9B51B
+P 4700 2500
+F 0 "D1" H 4700 2600 50  0000 C CNN
+F 1 "LED" H 4700 2400 50  0000 C CNN
+F 2 "" H 4700 2500 50  0000 C CNN
+F 3 "" H 4700 2500 50  0000 C CNN
+	1    4700 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 58C9B6B8
+P 6800 2450
+F 0 "D2" H 6800 2550 50  0000 C CNN
+F 1 "LED" H 6800 2350 50  0000 C CNN
+F 2 "" H 6800 2450 50  0000 C CNN
+F 3 "" H 6800 2450 50  0000 C CNN
+	1    6800 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 58C9B964
+P 4700 3250
+F 0 "R1" V 4780 3250 50  0000 C CNN
+F 1 "470R" V 4700 3250 50  0000 C CNN
+F 2 "" V 4630 3250 50  0000 C CNN
+F 3 "" H 4700 3250 50  0000 C CNN
+	1    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58C9BA0A
+P 5350 3250
+F 0 "R2" V 5430 3250 50  0000 C CNN
+F 1 "47K" V 5350 3250 50  0000 C CNN
+F 2 "" V 5280 3250 50  0000 C CNN
+F 3 "" H 5350 3250 50  0000 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58C9BA85
+P 5900 3250
+F 0 "R3" V 5980 3250 50  0000 C CNN
+F 1 "47K" V 5900 3250 50  0000 C CNN
+F 2 "" V 5830 3250 50  0000 C CNN
+F 3 "" H 5900 3250 50  0000 C CNN
+	1    5900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58C9BAEC
+P 6800 3250
+F 0 "R4" V 6880 3250 50  0000 C CNN
+F 1 "470R" V 6800 3250 50  0000 C CNN
+F 2 "" V 6730 3250 50  0000 C CNN
+F 3 "" H 6800 3250 50  0000 C CNN
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 58C9BC07
+P 5000 3650
+F 0 "C1" H 5025 3750 50  0000 L CNN
+F 1 "47uF" H 5025 3550 50  0000 L CNN
+F 2 "" H 5000 3650 50  0000 C CNN
+F 3 "" H 5000 3650 50  0000 C CNN
+	1    5000 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 58C9BC66
+P 6400 3650
+F 0 "C2" H 6425 3750 50  0000 L CNN
+F 1 "47uF" H 6425 3550 50  0000 L CNN
+F 2 "" H 6400 3650 50  0000 C CNN
+F 3 "" H 6400 3650 50  0000 C CNN
+	1    6400 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 58C9CB89
+P 3800 3300
+F 0 "BT1" H 3900 3400 50  0000 L CNN
+F 1 "9V" H 3900 3300 50  0000 L CNN
+F 2 "" V 3800 3360 50  0000 C CNN
+F 3 "" V 3800 3360 50  0000 C CNN
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2650 4700 3100
+Wire Wire Line
+	4700 3650 4850 3650
+Connection ~ 4700 3650
+Wire Wire Line
+	3800 3100 3800 2000
+Wire Wire Line
+	3800 2000 6800 2000
+Wire Wire Line
+	4700 2000 4700 2350
+Wire Wire Line
+	5350 2000 5350 3100
+Connection ~ 4700 2000
+Wire Wire Line
+	5900 2000 5900 3100
+Connection ~ 5350 2000
+Wire Wire Line
+	6800 2000 6800 2300
+Connection ~ 5900 2000
+Wire Wire Line
+	6800 2600 6800 3100
+Wire Wire Line
+	5350 3400 5350 4000
+Wire Wire Line
+	5350 3650 5150 3650
+Wire Wire Line
+	5900 3400 5900 3900
+Wire Wire Line
+	5900 3650 6250 3650
+Wire Wire Line
+	6550 3650 7450 3650
+Connection ~ 6800 3650
+Wire Wire Line
+	3800 5050 7450 5050
+Wire Wire Line
+	3800 3500 3800 5050
+Connection ~ 4700 5050
+Wire Wire Line
+	5600 4450 5600 3900
+Wire Wire Line
+	5600 3900 5900 3900
+Connection ~ 5900 3650
+Wire Wire Line
+	5800 4000 5800 4500
+Wire Wire Line
+	5350 4000 5800 4000
+Connection ~ 5350 3650
+$Comp
+L BC368 U2
+U 1 1 58D84EA7
+P 6800 4500
+F 0 "U2" H 6600 4800 60  0000 C CNN
+F 1 "BC368" H 6800 4150 60  0000 C CNN
+F 2 "" H 6800 4500 60  0001 C CNN
+F 3 "" H 6800 4500 60  0001 C CNN
+	1    6800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3650 7450 4350
+Wire Wire Line
+	6800 3400 6800 3650
+Wire Wire Line
+	7450 5050 7450 4700
+Connection ~ 6150 4500
+Wire Wire Line
+	5800 4500 6150 4500
+$Comp
+L BC368 U1
+U 1 1 58D861BF
+P 5000 4600
+F 0 "U1" H 4800 4900 60  0000 C CNN
+F 1 "BC368" H 5000 4250 60  0000 C CNN
+F 2 "" H 5000 4600 60  0001 C CNN
+F 3 "" H 5000 4600 60  0001 C CNN
+	1    5000 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3400 4700 4100
+Wire Wire Line
+	4700 4900 4700 5050
+Wire Wire Line
+	5650 4600 5650 4450
+Wire Wire Line
+	5650 4450 5600 4450
+Wire Wire Line
+	4350 4450 4350 4100
+Wire Wire Line
+	4350 4100 4700 4100
+Wire Wire Line
+	4350 4800 4350 4900
+Wire Wire Line
+	4350 4900 4700 4900
+$EndSCHEMATC
